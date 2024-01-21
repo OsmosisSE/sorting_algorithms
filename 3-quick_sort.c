@@ -26,6 +26,22 @@ void quick_sort(int *array, size_t size)
 }
 
 /**
+ * swap - Function that swaps two values
+ *
+ * @a: Fisrt value
+ * @b: Second value
+ * Return: 0
+ */
+void swap(int *a, int *b)
+{
+	int tmp;
+
+	tmp = *b;
+	*b = *a;
+	*a = tmp;
+}
+
+/**
  * partition - Function that sets the pivot for quick_sort
  *
  * @array: Array to partition
