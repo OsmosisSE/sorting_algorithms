@@ -1,7 +1,7 @@
 #ifndef SORT_H
 #define SORT_H
 
-#include <stdio.h>
+#include <stddef.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -36,6 +36,8 @@ void lomuto_sort(int *array, size_t size, int left, int right);
 /* Prototypes for advanced tasks */
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
+void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
+void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
