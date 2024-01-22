@@ -40,6 +40,7 @@ void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
 void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
 void counting_sort(int *array, size_t size);
 int get_max(int *array, size_t size);
+void _merge_sort(int *array, int *temp, size_t size);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
