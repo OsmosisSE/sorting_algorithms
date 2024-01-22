@@ -9,13 +9,15 @@
  * @size: size of the array
  * Return: 0
  */
-int get_max(int *array, size_t size)
+int get_max(int *array, int size)
 {
-	int max = INT_MIN;
+	int max, i;
 
-	while (size--)
-		if (array[size] > max)
-			max = array[size];
+	for (max = array[0], i = 1; i < size; i++)
+	{
+		if (array[i] > max)
+			max = array[i];
+	}
 
 	return (max);
 }
